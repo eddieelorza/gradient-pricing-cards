@@ -97,13 +97,13 @@ body{
     border-radius: 30px;
     height: 50px;
     width: 220px;
-    transition: all 1s linear;
+    transition: all 1s ease;
     cursor: pointer;
 
 
 }
 
-.card-btn:hover{
+.card:hover .card-btn{
     transform: translateY(50px);
 }
 
