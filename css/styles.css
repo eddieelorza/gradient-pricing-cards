@@ -1,0 +1,109 @@
+
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+
+ }
+
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: #323644;
+
+
+}
+.plans-content{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: linear-gradient( 83.2deg,  rgb(93, 121, 233) 10.8%, rgb(142, 162, 250) 94.3% );
+    width: 290px;
+    height: 380px;
+    border-radius: 20px;
+    margin-left: -50px;
+    color: white;
+    box-shadow: 4px 4px 20px -6px rgba(0,0,0,0.56);
+    -webkit-box-shadow: 4px 4px 20px -6px rgba(0,0,0,0.56);
+    -moz-box-shadow: 4px 4px 20px -6px rgba(0,0,0,0.56);
+    padding: 30px;
+}
+.card:nth-last-of-type(2){
+    background-image: linear-gradient( 109.6deg,  rgb(255, 167, 248) 11.2%, rgb(156, 56, 156) 91.1% );
+    z-index: 2;
+}
+
+.card:last-of-type{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(213, 75, 16) 0%, rgb(238, 194, 48) 90% );
+    z-index: 1;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: linear 350ms;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+.info-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    z-index: 1;
+    text-shadow: 2px 1px 2px rgba(154, 154, 154, 0.5);
+
+}
+
+.bg-price{
+    position: absolute;
+    font-size: 15rem;
+    color: rgba(255, 255, 255, 0.5);
+    opacity: 0.5;
+    font-weight: 700;
+    
+
+}
+.info-card--plan{
+    font-size: 1.5rem;
+}
+.info-card--plan p:nth-last-child(1){
+   font-size: 4rem;
+}
+
+
+.bg-price span{
+    font-size: 2rem;
+}
+
+.card-btn{
+    border: none;
+    color: rgb(71, 69, 69);
+    font-size: 1.1rem;
+    text-shadow: none;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 30px;
+    height: 50px;
+    width: 220px;
+    transition: all 1s linear;
+    cursor: pointer;
+
+
+}
+
+.card-btn:hover{
+    transform: translateY(50px);
+}
+
