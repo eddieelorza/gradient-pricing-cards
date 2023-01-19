@@ -10,20 +10,28 @@
  }
 
 body{
-    display: grid;
-    place-items: center;
-    height: 100vh;
     background: #6441A5;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #2a0845, #6441A5);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #2a0845, #6441A5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
-
+main{
+    height: 100vh;
+    display: grid;
+    place-items: center;
 
 }
+ .title{
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+ }
+
 .plans-content{
     display: flex;
     justify-content: center;
     text-align: center;
+    
 
 }
 .card{
@@ -78,6 +86,25 @@ body{
     
 
 }
+
+h2{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+h2::after{
+    content: '';
+    position: absolute;
+    display: block;
+    border-radius: 10px;
+    width: 30px;
+    height: 10px;
+    left: 45%;
+    bottom: 0;
+    background: #ffffff;
+ 
+}
 .info-card--plan{
     font-size: 1.5rem;
 }
@@ -110,3 +137,7 @@ body{
     transform: translateY(50px);
 }
 
+
+.credits{
+    color: white;
+}
